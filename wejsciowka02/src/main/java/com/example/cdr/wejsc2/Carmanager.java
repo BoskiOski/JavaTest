@@ -1,12 +1,15 @@
-package com.example.cdr.wejsc1;
+package com.example.cdr.wejsc2;
 
 import java.util.*;
 
 public class Carmanager{
 
-
-
-        private List<Car> lista = new ArrayList<Car>();
+        private ICar lista;
+        
+        public Carmanager(ICar car) {
+        	this.lista = car;
+        }
+        
         public void addCar (Car samochod) {
         lista.add(samochod);
         }
@@ -15,8 +18,8 @@ public class Carmanager{
         lista.remove(samochod);
         }
 
-        public List<Car> getCars() {
-            return lista;
+        public Car getCars(int at) {
+            return lista.get(at);
         }
 
     }

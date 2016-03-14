@@ -1,4 +1,4 @@
-package com.example.cdr.wejsc1;
+package com.example.cdr.wejsc2;
 
 
 public class Car{
@@ -14,6 +14,10 @@ public class Car{
             this.sprawnosc = sprawnosc;
 
 
+        }
+        
+        public String getName() {
+        	return marka;
         }
 }
 
