@@ -38,17 +38,17 @@ public class CarmanagerTest{
     @Test
     public void findCarByMarkaCheck(){
         Car car3 = new Car("Mazda",1990, true);
-        expect(mock.findCarByMarka("Mazda")).andReturn(car3).atLeastOnce();
+        expect(mock.findCarsByMarka("Mazda")).andReturn(car3).atLeastOnce();
         replay(mock);
-        assertEquals(car3, manager.findCarByMarka("Mazda"));
+        assertEquals(car3, manager.findCarsByMarka("Mazda"));
         verify(mock);
     }
     @Test
     public void findCarByRocznikCheck(){
         Car car4 = new Car("Fiat",1980, true);
-        expect(mock.findCarByRocznik(1980)).andReturn(cara).atLeastOnce();
+        expect(mock.findCarsByRocznik(1980)).andReturn(cara).atLeastOnce();
         replay(mock);
-        assertEquals(cara, manager.findCarByRocznik(1980));
+        assertEquals(cara, manager.findCarsByRocznik(1980));
         verify(mock);
 
 
