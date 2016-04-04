@@ -16,13 +16,15 @@ public class CarmanagerTest{
 
     private Carmanager manager;
 	private ICar mock;
-    
+
+	private List<Car> cara;
+
 	@Before
 	public void setUp() {
 		mock = createMock(ICar.class);
 		manager = new Carmanager(mock);
 	}
-	
+
 	@Test
 	public void addCheck(){
 		Car ca = new Car("Opel", 1992, true);
@@ -32,6 +34,24 @@ public class CarmanagerTest{
         manager.addCar(ca);
 		assertEquals("Opel", manager.getCars(1).getName());
 		verify(mock);
+    }
+    @Test
+    public void findCarByMarkaCheck(){
+        Car car3 = new Car("Mazda",1990, true);
+        expect(mock.findCarByMarka("Mazda")).andReturn(car3).atLeastOnce();
+        replay(mock);
+        assertEquals(car3, manager.findCarByMarka("Mazda"));
+        verify(mock);
+    }
+    @Test
+    public void findCarByRocznikCheck(){
+        Car car4 = new Car("Fiat",1980, true);
+        expect(mock.findCarByRocznik(1980)).andReturn(cara).atLeastOnce();
+        replay(mock);
+        assertEquals(cara, manager.findCarByRocznik(1980));
+        verify(mock);
+
+
     }
 
 
