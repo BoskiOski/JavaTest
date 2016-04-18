@@ -1,4 +1,4 @@
-package com.example.mockdemo.messenger;
+package com.example.messenger;
 
 import java.util.Random;
 
