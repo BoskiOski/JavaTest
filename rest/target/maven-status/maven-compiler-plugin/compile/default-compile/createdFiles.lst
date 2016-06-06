@@ -1,0 +1,4 @@
+com/example/restservicedemo/rest/JedzenieRESTService.class
+com/example/restservicedemo/domain/Jedzenie.class
+com/example/restservicedemo/service/JedzenieManager.class
+com/example/restservicedemo/domain/JedzenieResponse.class

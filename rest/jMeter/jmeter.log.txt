@@ -1,0 +1,13 @@
+2016/05/27 13:39:55 INFO  - jmeter.util.JMeterUtils: Setting Locale to pl_PL 
+2016/05/27 13:39:55 INFO  - jmeter.util.JMeterUtils: Could not find resources for 'pl_PL', using 'pl' 
+2016/05/27 13:39:55 INFO  - jmeter.JMeter: Loading user properties from: D:\Pobrane\apache-jmeter-3.0\apache-jmeter-3.0\bin\user.properties 
+2016/05/27 13:39:55 INFO  - jmeter.JMeter: Loading system properties from: D:\Pobrane\apache-jmeter-3.0\apache-jmeter-3.0\bin\system.properties 
+2016/05/27 13:39:55 FATAL - jmeter.JMeter: An error occurred:  java.lang.IllegalArgumentException: Unknown arg: D:\Pobrane\testowanieJava-master\testowanieJava-master\restservicedemo\jMeter\restApi.jmx
+	at org.apache.jmeter.JMeter.initializeProperties(JMeter.java:746)
+	at org.apache.jmeter.JMeter.start(JMeter.java:385)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:259)
+

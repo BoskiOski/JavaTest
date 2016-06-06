@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <JEDZENIE ID="1" NAZWA="Pomidor" RODZAJ="Warzywo" rokProdukcji="2009"/>
+  <JEDZENIE ID="2" NAZWA="Kurczak" RODZAJ="Zwierzyna" rokProdukcji="2010"/>
+  <JEDZENIE ID="3" NAZWA="Banan" RODZAJ="Owoc" rokProdukcji="2156"/>
+</dataset>
