@@ -75,11 +75,11 @@ public class JedzenieServiceTest {
 		
 		RestAssured.when().get("/jedzenie/szukaj/Banan").then().assertThat().statusCode(200);
 		
+		JedzenieResponse jedzenie3 = get("/jedzenie/szukaj/Banan").as(JedzenieResponse.class);
+		List<Jedzenie> j = jedzenie3.getJedzenie();
 		
-		
-		
-		Jedzenie jJedzenie = get("/jedzenie/1").as(Jedzenie.class);
-		assertEquals("Banan", jJedzenie.getNazwa());
+		assertEquals("Banan", j.get(0).getNazwa());
+		assertEquals("Banan", j.get(1).getNazwa());
 		
 	}
 	
